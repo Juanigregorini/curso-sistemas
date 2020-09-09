@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Formulario</title>
+	</head>
+
+	<body>
+		<form action="respuesta_server.php" method="POST" enctype="multipart/form-data">
+			<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+				<h1>Crete Account</h1>
+				<table>
+					<tr>			
+						<td>
+							<label>First name*</label><br>
+							<input  type="text" id="name" name="name" value="enter your first name"><br><br>
+						</td>
+
+						<td>	
+							<label>Last name</label><br>
+							<input type="text" id="lastname" name="lastname" value="enter your last name"><br><br>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2">
+							<label>Email*</label><br>
+							<input style="width:80%" type="text" id="email" name="email" value="enter your email"><br><br>
+						</td>
+					</tr>
+					<tr>				
+						<td>
+							<label>Password*</label><br>
+							<input type="password" id=password1 name="password">
+						</td>
+						<td>
+							<label for="password2">Confirm Password*</label><br>
+							<input type="Password" name="password2" name="password2">
+						</td>		
+					</tr>
+					<tr>
+						<td><br>
+							<label for="gender">Gender:</label><br>
+							<input type="radio" id="gendermale" name="gender" value="male">Male</input>
+							<input type="radio" id="genderfemale" name="gender" value="female">Female</input>
+						</td>
+						<td><br>
+
+							<label for= "hobbiesoption">Hobbies</label><br>
+							<input type="checkbox" name="checkboxmusic">
+							<label for="hobbies" id="hobbiesmusic" name="hobbiesoption" value="music">Music</label>
+							<input type="checkbox" name="checkboxsports">
+							<label for="hobbies" id="hobbiessports" name="hobbiesoption" value="sports">Sports</label>
+							<input type="checkbox" name="checkboxsports">
+							<label for="hobbies" id="hobbiessports" name="hobbiesoption" value="travel">Travel</label>
+							<input type="checkbox" name="checkboxsports">
+							<label for="hobbies" id="hobbiessports" name="hobbiesoption" value="movies">Movies</label>
+							
+						</td>
+					</tr>
+
+					<tr>
+						<td colspan="1"><br>
+							<label>Source of Income</label><br>
+							<select name="source" size="1"></sele<br>
+							<option style="width:100%" value="Employed">Employed</option> 
+	
+						</td>
+						<td colspan="1"><br>
+							<label>income</label><br>
+							<input style="width:80%" type="range">20k</input>
+						</td>
+					</tr>
+					<tr>
+						<td><br>
+							<label for="avatar">Upload Profile Picture:</label><br>
+							<input type="file"id="avatar" name="avatar" accept="image/png, image/jpeg"><br><br>
+
+						</td>
+						<td>
+							<label>Age</label><br>
+							<input type="Age" name="age">
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2">
+							<label>Bio</label><br>
+							<textarea style="width:100%" name="message" rows="10" cols="30"></textarea><br><br>
+						</td>
+					</tr>
+					<tr>
+						<td>
+						</td>
+						<td>
+						<input type="submit" value="Create"></input>
+						</td>
+					</tr>
+				</table>
+			
+		</form>
+	</body>
+</html>	

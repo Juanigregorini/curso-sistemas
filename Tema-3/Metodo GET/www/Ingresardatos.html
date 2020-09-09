@@ -1,0 +1,80 @@
+
+<html>
+	<body>
+		<form action="respuesta_server.php" method="GET">
+			<h1>Bienvenidos</h1>
+			<p>Complete los datos:</p>	
+					<label for="name">Nombre:</label>
+					<input type="text" id="name" name="name">
+
+					<label for="lastname">Apellidos:</label>
+					<input type="text" id="lastname" name="lastname"><br><br>
+
+					<label for="email">Correo electronico:</label>
+					<input type="text" id="email" name="email" value= "@"><br><br>
+
+					<label for="poblacion">Poblacion:</label>
+					<input type="text" id="poblacion" name="poblacion">
+
+					<label for="province">Provincia:</label>
+					<input type="text" id="province" name="province"><br><br>
+
+				
+
+					<label for="age">Edad:</label><br>
+					<input type="radio" id="age1" name="age" value="0-20">
+					<label for="age1">0-20</label><br>
+					<input type="radio" id="age2" name="age" value="20-40">
+					<label for="age2">20-40</label><br>
+					<input type="radio" id="age3" name="age" value="40-60">
+					<label for="age3">40-60</label><br>
+					<input type="radio" id="age4" name="age" value="60-100">
+					<label for="age4">60-100</label><br>
+
+					<p>Cómo nos conociste?</p>
+			
+					<input type="checkbox" id= "option1" name="option1">
+					<label for="option1">A través de un amigo.</label><br>
+					<input type="checkbox" id= "option2" name="option2">
+					<label for="option2">A traves del buscador.</label><br>
+					<input type="checkbox" id= "option3" name="option3">
+					<label for="option3">Navegando por la red.</label><br>
+					<input type="checkbox" id= "option4" name="option4">
+					<label for="option4">Otros.</label><br>		
+				
+
+					<p>Opinion sobre nuestra página web</p>
+					<textarea name="message" rows="10" cols="30">Escribe...</textarea>
+
+					<p>Tienes alguna sugerencia...</p>
+					<textarea name="message" rows="10" cols="30">Escribe tu sugerencias...</textarea>
+
+					<p> Cuanto navegas por Internet? (Señala la opcion mas aproximada)</p>
+					<select name="time" size="2"><br>
+
+						<option value="2">2 horas al dia.</option>
+
+						<option value="4">4 horas al dia.</option> 
+
+
+					</select><br><br>
+
+
+				
+					<input type="submit" value="Enviar Formulario">
+						
+					</input>
+
+					<input type="reset" value="Borrar Formulario">
+						
+					</input>
+
+		
+					<!--
+					a diferencia del video utilice este metodo en vez de las tablas <table> </table> ¿hay algun tipo de diferencia? trae algun problema a futuro hacerlo de este metodo o es exacatamente lo mismo?
+
+					analisis del URL: http://localhost/respuesta_server.php?name=Juan+Ignacio&lastname=Gregorini&email=%40dasdasads&poblacion=dasdadasda&province=adsdasdadas&age=60-100&option3=on&option4=on&message=esta+buena&message=no&time=4 "Expone todo los datos en la URL"
+					 -->
+		</from>			
+	</body>
+</html>
