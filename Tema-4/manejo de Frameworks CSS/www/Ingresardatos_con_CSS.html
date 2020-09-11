@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Formulario</title>
+	</head>
+
+	<body style="background-color: rgb( 249, 249, 249); ">
+		<form action="respuesta_server.php" method="POST" enctype="multipart/form-data">
+			<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+				<table class="w3-container">
+					<tr>
+						<td colspan="2">
+							<div style="box-shadow: 0px 2px 0px grey" class=" w3-container w3-light-grey w3-text-black ">
+								<center><h1>Crete Account</h1><center>
+							</div>
+						</td>
+					</tr>
+					<tr>			
+						<td>
+							<b><label style="color:#00CC99">First name*</label></b><br>
+							<input style="" type="text" id="name" name="name" value="enter your first name"><br><br>
+						</td>
+
+						<td>	
+							<b><label style="color:#00CC99">Last name</label></b><br>
+							<input type="text" id="lastname" name="lastname" value="enter your last name"><br><br>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2">
+							<b><label style="color:#00CC99">Email*</label></b><br>
+							<input style="width:89%" type="text" id="email" name="email" value="enter your email"><br><br>
+						</td>
+					</tr>
+					<tr>				
+						<td>
+							<b><label style="color:#00CC99">Password*</label></b><br>
+							<input type="password" id=password1 name="password">
+						</td>
+						<td>
+							<b><label style="color:#00CC99" for="password2">Confirm Password*</label></b><br>
+							<input type="Password" name="password2" name="password2">
+						</td>		
+					</tr>
+					<tr>
+						<td><br>
+							<b><label style="color:#00CC99" for="gender">Gender:</label></b><br>
+							<input type="radio" id="gendermale" name="gender" value="male">Male</input>
+							<input type="radio" id="genderfemale" name="gender" value="female">Female</input>
+						</td>
+						<td><br>
+
+							<b><label style="color:#00CC99" for= "hobbiesoption">Hobbies</label></b><br>
+							<input type="checkbox" name="checkboxmusic">
+							<label for="hobbies" id="hobbiesmusic" name="hobbiesoption" value="music">Music</label>
+							<input type="checkbox" name="checkboxsports">
+							<label for="hobbies" id="hobbiessports" name="hobbiesoption" value="sports">Sports</label>
+							<input type="checkbox" name="checkboxsports">
+							<label for="hobbies" id="hobbiessports" name="hobbiesoption" value="travel">Travel</label>
+							<input type="checkbox" name="checkboxsports">
+							<label for="hobbies" id="hobbiessports" name="hobbiesoption" value="movies">Movies</label>
+							
+						</td>
+					</tr>
+
+					<tr>
+						<td colspan="1"><br>
+							<b><label style="color:#00CC99">Source of Income</label></b><br>
+							<select name="source" size="1"></selectbr>
+							<option style="width:100%" value="Employed">Employed</option> 
+	
+						</td>
+
+
+							
+
+
+						<td colspan="1"><br>
+							<b><label style="color:#00CC99">Income</label></b><br>
+							<input style="width:80%" type="range" min="20" max="150"></input>
+							<b><label class="w3-round"style="color: white;background-color:#00CC99">20k</label></b>
+						</td>
+					</tr>
+					<tr>
+						<td><br>
+							<b><label style="color:#00CC99" for="avatar">Upload Profile Picture:</label></b><br>
+							<input type="file"id="avatar" name="avatar" accept="image/png, image/jpeg"><br><br>
+
+						</td>
+						<td>
+							<b><label style="color:#00CC99">Age</label></b><br>
+							<input type="Age" name="age">
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2">
+							<b><label style="color:#00CC99">Bio</label></b><br>
+							<textarea style="width:100%" name="message" rows="10" cols="30"></textarea><br><br>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2">
+						<div class="w3-container w3-light-grey w3-text-brown" style="box-shadow: 0px -2px 0px grey">
+							<input type="submit" class="w3-button w3-ripple w3-teal w3-padding w3-button w3-right w3-round " value="Create"></input>
+						</div>	
+						</td>
+					</tr>
+				</table>
+
+		</form>
+	</body>
+</html>
